@@ -1,0 +1,33 @@
+<body>
+    <div class="bg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        
+                        <li class="nav-item dropdown"  id="items">
+                          <a class="nav-link dropdown-toggle" href=".\profile" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <button class="btn btn-primary" id="btn"type="submit"><i class="fa fa-user"></i></button>
+                              
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">profile name:{{name}}</a>
+                            <a class="dropdown-item" href="#">email:{{mail}}</a>
+        
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"(click)="signOut()">sign out</a>
+
+                          </div>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+                  </nav>
+  
+  
+   
+<app-questions></app-questions>
+</div>
+</body>

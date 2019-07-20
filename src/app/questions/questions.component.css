@@ -1,0 +1,18 @@
+
+.card{
+    width:500px;
+    height:300px;
+    margin-left:60px;
+    margin-top:90px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+}
+#finaltext{
+    text-align: center;
+    margin-top:100px;
+    font-display: bold;
+}
+.card .card-header,.card .card-footer{
+   background-color:#9AECE9  ;
+}

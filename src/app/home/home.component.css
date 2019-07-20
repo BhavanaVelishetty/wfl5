@@ -1,0 +1,29 @@
+.body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+.navbar{
+    min-height: 60px;
+}
+#btn {
+    float:right;
+}
+#navbarDropdown{
+    float:right;
+}
+.bg{
+    background-image:url("http://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2019/01/15/1429906-705298265.jpg?itok=KhySz0Qe");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:600px;
+
+}
+i{
+    font-size: 30px;
+    color:blue;
+}
+.navbar{
+    background: black;
+}

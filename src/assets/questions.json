@@ -1,0 +1,20 @@
+[
+    {
+       "ques":"How muvh wateryou use for washing?",
+       "op1":"10",
+       "op2":"20",
+       "op3":"30"
+    },
+    {
+        "ques":"what percentage is used",
+        "op1":25,
+        "op2":24,
+        "op3":40
+    },
+    {
+        "ques":"How can we save water",
+        "op1":"many ways",
+        "op2":"method 1",
+        "op3":"method 3"
+    }
+]
