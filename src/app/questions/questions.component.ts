@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {FreeapiService}from '../../app/services/freeapi.service';
 import {Comment} from '../../app/classes/comment';
+import { GoogleloginComponent } from '../googlelogin/googlelogin.component';
 declare var $: any;
 @Component({
   selector: 'app-questions',
@@ -12,14 +13,17 @@ export class QuestionsComponent implements OnInit {
   
   data:any;
   question:any;
+  qid:any;
   op1:any;
   op2:any;
   op3:any;
+  op4:any;
   i:number=0;
   display:boolean=true;
   v:boolean;
   option:any;
   answers:Array<number>=[];
+  uid:any;
   constructor(private http:HttpClient,private _api:FreeapiService) { }
   selectedvalue (event: any) {
     this.option = event.target.value;
@@ -38,7 +42,7 @@ export class QuestionsComponent implements OnInit {
       this.op1=this.data[this.i].op1;
       this.op2=this.data[this.i].op2;
       this.op3=this.data[this.i].op3;
-       
+      this.op4=this.data[this.i].op4;
        $("#next").attr("disabled", true);
     }
     else
@@ -50,13 +54,21 @@ export class QuestionsComponent implements OnInit {
   }
   obj:Comment;
   ngOnInit() {
+    this._api.msg.subscribe(
+      (data) =>{
+      this.uid=data;
+      }
+    );
+    console.log(this.uid);
     this.http.get("assets/questions.json").subscribe((ques)=>{
           this.data=ques;
           console.log(this.data);
+          this.qid=ques[0].qid;
           this.question=ques[0].ques;
           this.op1=ques[0].op1;
           this.op2=ques[0].op2;
           this.op3=ques[0].op3;
+          this.op4=ques[0].op4;
     });
    
     var opost=new Comment();

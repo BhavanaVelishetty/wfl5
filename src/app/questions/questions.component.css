@@ -1,9 +1,10 @@
+
 @media screen and (max-height:600px)
 {
 .card{
-    width:500px;
+    width:480px;
     height:300px;
-    margin-left:60px;
+    margin-left:400px;
     margin-top:90px;
     border: 2px solid black;
     border-radius: 5px;
@@ -42,5 +43,8 @@
     font-display: bold;
 }
 .card .card-header,.card .card-footer{
-   background-color:#9AECE9  ;
+   background-color:#A0A7A7    ;
+}
+#next{
+    background: #F3E6F0  ;
 }
