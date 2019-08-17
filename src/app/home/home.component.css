@@ -13,12 +13,31 @@
     float:right;
 }
 .bg{
-    background-image:url("http://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2019/01/15/1429906-705298265.jpg?itok=KhySz0Qe");
+    background-image:url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position:center;
+    opacity:500;
+    filter:alpha(opacity=50);
     background-size:cover;
     background-repeat: no-repeat;
+}
+@media screen and (min-height:610px)
+{
+.bg{
+    height:720px;
+}
+}
+@media screen and (max-height:600px)
+{
+.bg{
     height:600px;
-
+}
+}
+@media screen and (max-width:500px)
+{
+.bg{
+    
+    background-image: none;
+}
 }
 i{
     font-size: 30px;

@@ -1,0 +1,124 @@
+body{
+    width:100%;
+    height:1000px;
+        background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .carousel{
+    margin-top: 7px;
+    width:600px;
+    height:400px;
+    float:right;
+    margin-right:50px;
+  }
+  .carousel-inner > .item > img {
+      width:700px;
+      height:600px;
+      float:right;
+  
+     }
+     .ddi{
+       margin-left:50px;
+       font-size: 15px;
+       margin-top: 8px;
+       font-style: italic;
+       color: #3a2337
+       
+     }
+    
+   body  h2 { color: #1c1c1f;
+      font-family: 'Impact';
+      font-size: 90px;
+      font-weight: normal; 
+      padding: 18px;
+      margin-left:50px;
+      text-align:left;
+  
+     }
+     h2{
+       margin-top:35px;
+  
+     }
+     
+    
+      @media only Screen and (min-width:768px)
+      {
+        body{
+          width:100%;
+          height:1026px;
+        }
+        .carousel .carousel-inner .item img{
+          margin-left: 70px;
+        }
+       
+        .ddi{
+          width:100%;
+        
+        }
+        
+      }
+      @media  Screen and (min-width:320px)
+      {
+        body{
+          width:100%;
+          height: 100%;
+        }
+        body h2{
+          font-size: 40px;
+        }
+        .carousel{
+          width:260px;
+          height:40%;
+          margin-right:17px; 
+        }
+  
+        .ddi{
+          width:80%;
+          font-size: 18px;
+        }
+        
+      }
+      @media  Screen and (min-width:411px)
+      {
+        body{
+          width:100%;
+          height: 100%;
+        }
+        body h2{
+          font-size: 50px;
+        }
+        .carousel{
+          width:290px;
+          height:40%;
+          margin-right:43px; 
+        }
+  
+        .ddi{
+          width:80%;
+          font-size: 18px;
+        }
+        
+      }
+      @media  Screen and (min-width:1000px)
+      {
+        body{
+          width:100%;
+          height:800px;
+        }
+        body h2{
+          padding-top: 13px;
+          font-size: 90px;
+        }
+        .carousel{
+          margin-left:5px;
+          width:500px;
+          height:400px;
+          margin-right:17px; 
+        }
+  
+        .ddi{
+          width:80%;
+          font-size: 30px;
+        }
+       
+      }

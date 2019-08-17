@@ -1,51 +1,24 @@
-<h2>Water For Life</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-     <br><br>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="https://wallpapercave.com/wp/wp2495537.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          
-          </div>
-      </div>
-
-      <div class="item">
-       
-        <img src="https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2019-03/18/full/1552928964-8145.jpg&width=1200" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-            
-        </div>
-        
-      </div>
+<head>
     
-      <div class="item">
-       <img src="https://internationalbanker.com/wp-content/uploads/2016/12/Water_resized.jpg " alt="New York" style="width:100%;">
-        <div class="carousel-caption">
-          
-        </div>
-    
-      </div>
-
-      <div class="item">
-        <img src="https://cdn5.eyeem.com/thumb/c8f38358eff8b3b7812accea043c2494d21e37dd-1554003902382/w/1280 " alt="New York" style="width:100%;">
-         <div class="carousel-caption">
-           
-         </div>
-     
-       </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    </div></div>
-    <br>
-    <button (click)="fun()" data-toggle="modal" id="googleBtn"> Take Survey</button>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+<body>
+    <div class="first">
+   
+        <h1>
+          <span>no<a>water</a></span>
+          <span><a>no</a>life</span>
+        </h1>
+        
+     </div>
+     <button  (click)="fun()" data-toggle="modal" type="button" id="ts" class=" btn btn-primary btn-block w-25 p-3 animated bounceInRight">Take Survey</button>
+
      <br>
      <div id="dio" class="modal">
         <div class="modal-content">
@@ -53,8 +26,12 @@
             <app-googlelogin></app-googlelogin>
           
         </div>
-      </div>          
+      </div>
+      <button (click)="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    </body>  
     
-      
+   
+    <app-second></app-second>
+    <app-third></app-third>
 <br>
 <br>

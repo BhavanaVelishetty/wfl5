@@ -9,6 +9,8 @@ import { QuestionsComponent } from './questions/questions.component';
 import {FreeapiService}from './services/freeapi.service';
 import {enableProdMode} from '@angular/core';
 import { FirstpageComponent } from './firstpage/firstpage.component';
+import { SecondComponent } from './second/second.component';
+import { ThirdComponent } from './third/third.component';
 
 enableProdMode();
 @NgModule({
@@ -17,7 +19,9 @@ enableProdMode();
     GoogleloginComponent,
     HomeComponent,
     QuestionsComponent,
-    FirstpageComponent
+    FirstpageComponent,
+    SecondComponent,
+    ThirdComponent
   ],
   imports: [
     BrowserModule,

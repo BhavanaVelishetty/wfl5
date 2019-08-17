@@ -54,8 +54,8 @@ export class GoogleloginComponent implements AfterViewInit {
  
   navigate(name,Email)
   {
-    this.ngZone.run(() =>this.router.navigate(['/home',{'n':name}])).then();
-    this.ngZone.run(() =>this.router.navigate(['/home',{'m':Email}])).then();
+  
+    this.ngZone.run(() =>this.router.navigate(['/home',{'n':name,'m':Email}])).then();
 
     
   }

@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     });
     this.name="";
     this.mail="";
-    this.ngZone.run(() =>this.router.navigate(['/login'])).then();
+    this.ngZone.run(() =>this.router.navigate(['/first'])).then();
    
   }
   ngOnInit() {

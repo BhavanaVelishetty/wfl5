@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path:'login',
     component:GoogleloginComponent
+  },
+  {
+    path:'first',
+    component:FirstpageComponent
   }
 ];
 
