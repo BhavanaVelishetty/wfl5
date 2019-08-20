@@ -11,7 +11,8 @@ import {enableProdMode} from '@angular/core';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
-
+import { DemographicsComponent } from './demographics/demographics.component';
+import {ChartsModule} from 'ng2-charts';
 enableProdMode();
 @NgModule({
   declarations: [
@@ -21,11 +22,13 @@ enableProdMode();
     QuestionsComponent,
     FirstpageComponent,
     SecondComponent,
-    ThirdComponent
+    ThirdComponent,
+    DemographicsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ChartsModule,
     HttpClientModule
   ],
   providers: [FreeapiService],

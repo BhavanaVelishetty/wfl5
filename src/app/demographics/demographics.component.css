@@ -1,0 +1,26 @@
+.card{
+    width:1000px;
+    height:500px;
+    margin-left:250px;
+    background-color:#ffffff;
+}
+.bg{
+    width:1900px;
+    height:500px;
+    background-color:#f1f1ef;
+}
+.bg2{
+    height:230px;
+    width:1900px;
+    background-color:#f1f1ef;
+   }
+#bf{
+    font-size:50px;
+    margin-left:150px;
+    color:#19b2e6;
+}
+#bf2{
+    font-size:60px;
+    margin-left:380px;
+    color:#315deb;
+}

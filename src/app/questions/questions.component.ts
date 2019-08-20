@@ -24,6 +24,7 @@ export class QuestionsComponent implements OnInit {
   option:any;
   answers:Array<number>=[];
   uid:any;
+  confirm:any;
   constructor(private http:HttpClient,private _api:FreeapiService) { }
   selectedvalue (event: any) {
     this.option = event.target.value;
@@ -51,7 +52,12 @@ export class QuestionsComponent implements OnInit {
       this.i=null;
       this.display=false;
     }
+    if(this.i==this.data.length && this.display==false)
+    {
+        this.confirm=true;
+    }
   }
+  
   obj:Comment;
   ngOnInit() {
     this._api.msg.subscribe(

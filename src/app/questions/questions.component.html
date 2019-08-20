@@ -22,13 +22,16 @@
       <p class="card-text"><input type="radio" value="{{op1}}" name="op" (change)="selectedvalue($event)" >{{op1}}</p>
       <p class="card-text"><input type="radio" value="{{op2}}" name="op" (change)="selectedvalue($event)" >{{op2}}</p>
       <p class="card-text"><input type="radio" value="{{op3}}" name="op" (change)="selectedvalue($event)" checked=true>{{op3}}</p>
+     
+    </div>
+  <a></a>
+  <div class="card-body" id="finaltext" *ngIf="!display">
+      <a routerLink="/demographics" routerLinkActive="active-link">
+        <button type="button" class="btn btn-danger">submit</button>
+      </a>
   </div>
-  <div class="card-body" id="finaltext" *ngIf="!display">Thank u for ur time</div>
-  
   <div class="card-footer" *ngIf="display">
-      
-      <button id="next" type="submit" class="btn" (click)="nextques()" disabled=!v>Next</button>
-      
+  <button id="next" type="submit" class="btn" (click)="nextques()" disabled=!v>Next</button>
   </div>
 
 </div>

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GoogleloginComponent } from './googlelogin/googlelogin.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
+import {DemographicsComponent} from './demographics/demographics.component';
 const routes: Routes = [
   {
     path:'',
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'home',
     component:HomeComponent
+  },
+  {
+    path:'demographics',
+    component:DemographicsComponent
   },
   {
     path:'login',
